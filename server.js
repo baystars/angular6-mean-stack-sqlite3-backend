@@ -57,7 +57,7 @@ router.route('/issues/add').post((req, res) => {
 });
 
 // curl -X PUT -H 'Content-Type: application/json' http://localhost:4000/issues/update/1 -d '{"title": "bar", "responsible": "b", "description": "c", "severity": "xxx", "status": "basdf"}'
-router.route('/issues/update/:id').post((req, res) => {
+router.route('/issues/update/:id').put((req, res) => {
   db.get("SELECT * FROM issue WHERE id = ?", [req.params.id], (err, row) => {
     if (err) {
       console.err(err);

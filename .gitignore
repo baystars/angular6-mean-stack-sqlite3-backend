@@ -7,7 +7,7 @@
 
 # dependencies
 /node_modules
-/data
+/data/data.db
 
 # IDEs and editors
 /.idea
