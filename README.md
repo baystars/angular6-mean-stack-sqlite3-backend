@@ -8,7 +8,7 @@ Rewrite MEAN Stack Backend service by Sqlite3
 
 Express
 
-    mkdir backend
+    mkdir -p backend/data
     cd backend
     npm init -y
     npm install --save-dev babel-cli babel-preset-env
